@@ -11,8 +11,46 @@ small files
 
 ```zsh
 cat > temp.txt # New File
+cat temp.txt # View File if Exists
 cat >> temp.txt # Append to an existsing file
 ```
+
+### Top Down - head
+
+```zsh
+head -4 temp.txt # First 4 lines
+```
+
+### Bottom Down - tail
+
+```zsh
+tail -4 temp.txt # Last 4 lines
+```
+
+### Numbered View - nl
+
+```zsh
+nl temp.txt
+```
+
+## View More - more
+
+View a file with more one page at a time.
+
+```zsh
+more temp.txt
+```
+
+## View Less - less
+
+View a file one page at a time but with the power to search hence less is more.
+
+```zsh
+less temp.txt
+# Search using `/` and the search text 
+# Move to the next match `n`
+```
+
 
 ### Touching - touch
 

@@ -50,6 +50,16 @@ Search a given file for text pattern, returning the line matched.
 grep "/usr/bin/bash" *.sh
 ```
 
+## Find and Replace - sed
+
+Finds a given text and replaces it. Can us flags like `g` and `i` to define regex flags.
+
+```zsh
+sed s/text-to-search/replacement-text/g temp.txt # Can redirect to a new file '>'
+```
+
+
+
 
 
 

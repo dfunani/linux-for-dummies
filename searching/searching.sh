@@ -13,8 +13,11 @@ for file in $(find $(pwd) -type f -name *.sh); do
 done
 
 counter=1
-echo "\nCommand (grep): Shabang in Shell Files"
-for file in $(grep "usr/bin/bash" *.sh); do
+echo "\nCommand (grep): Linux in README Files"
+for file in $(grep "Linux" *.md); do
     echo "$counter. $file"
     counter=$((counter + 1))
 done
+
+echo "\nCommand (sed): Search Shabang and Replace with env"
+echo $(sed s/-/_temp_/g *.md)
