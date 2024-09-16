@@ -29,3 +29,17 @@ dhclient eth0
 sudo apt install wireless-tool -y
 ifwconfig
 ```
+
+## Managing Domain Name Service (DNS) - dig
+
+```zsh
+dig www.google.com
+```
+
+## Managing Domain Name Service (DNS) - /etc/resolv.config
+
+```zsh
+cat /etc/resolv.config
+# replace or Add nameserver ip-address
+echo "8.8.8.8" >> /etc/resolv.config
+```
