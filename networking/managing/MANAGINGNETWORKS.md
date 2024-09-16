@@ -43,3 +43,11 @@ cat /etc/resolv.config
 # replace or Add nameserver ip-address
 echo "8.8.8.8" >> /etc/resolv.config
 ```
+
+## Managing Local IP Addressing - /etc/hosts
+
+```zsh
+cat /etc/hosts
+# Add url to ip mapping
+echo "www.google.com    192.0.0.1" >> /etc/hosts
+```
