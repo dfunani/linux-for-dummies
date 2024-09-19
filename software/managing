@@ -1,0 +1,62 @@
+# Managing Software
+
+## Package Management - APT
+
+In debian distributions and most others, software packages are managed with Advanced Packaging Tool (apt). Which maintains a repository of the packages locally.
+
+### Search (Local Repository)
+
+Check if a software package is available.
+
+```zsh
+apt-cache search package-name
+```
+
+### Add/Download (Package)
+
+```zsh
+apt-get install package-name
+```
+
+### Remove (Excludes Configurations)
+
+```zsh
+apt-get remove package-name
+```
+
+### Remove (Includes Configurations)
+
+```zsh
+apt-get purge package-name
+```
+
+### Update (Local Repository)
+
+```zsh
+apt-get update
+```
+
+### Update (Package)
+
+```zsh
+apt-get upgrade
+```
+
+### Add (Repository)
+
+```zsh
+# Append sources.List
+cat /etc/apt/sources.list
+# Contains references to the repositories applicable
+
+echo "deb http://ppa.launchpad.net/webupd8team/java/ubuntu trusty main" >> /etc/apt/sources.list
+echo "deb­src http://ppa.launchpad.net/webupd8team/java/ubuntu precise main" >> /etc/apt/sources.list
+```
+
+## Package Management - GIT
+
+### Add/Download
+
+```zsh
+git clone https://github.com/username/repository-name
+```
